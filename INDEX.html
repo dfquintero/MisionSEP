@@ -10,10 +10,67 @@
 </head>
 <body>
     <div data-role="page">
+        <div data-role="panel" id="mypanel" data-theme="b" data->
+            <ul data-role="listview" data-inset="false">
+                <li id="skull" data-icon="alert" data-role="list-divider" style="background-color:darkcyan"><H1 style="text-align:center; font-size:large"> S.E.P.</H1> </li>
+                <li id="skull" data-icon="home"><a href="#">Home</a></li>
+                <li id="skull" data-icon="home"><a href="#">Logros</a></li>
+                <li id="skull" data-icon="alert" data-role="list-divider">Misiones</li>
+                <li data-icon="delete"><a href="#">Archivo Ambiental</a></li>
+                <li data-icon="gear"><a href="#">Reconocimiento T</a></li>
+                <li data-icon="info"><a href="#">Denuncias</a></li>
+                <li id="skull" data-icon="alert" data-role="list-divider">Configuración</li>
+                <li data-icon="false"><a href="#">Mi Perfil</a></li>
+                <li data-icon="false"><a href="#">Acerca De...</a></li>
+            </ul>
+
+        </div>
         <div data-role="header"><h1> Hola Soy un Header </h1> </div>
-        <div role="main" class="ui-content">...</div>
+        <div role="main" class="ui-content">
+            <a href="#mypanel" >hola soy un boton</a>
+
+            <center>
+                <img src="img/tumblr_n2nj3tO0Oh1qjk2rvo1_500.gif" />
+                <div id="Status_Timer">Timer detenido</div>
+                <br>
+                <br>
+                <input type="button" value="Iniciar Timer" onclick="Iniciar_Timer()">
+                <input type="button" value="Detener Timer" onclick="Detener_Timer()">
+
+            </center>
+
+        </div>
         <div data-role="footer" data-position="fixed">Hola soy un Footer</div>
 
     </div>
+    <script type="text/javascript">
+
+    var        Handle_Mi_Timer = null;
+     var        Contador = 0;
+
+    function Iniciar_Timer() {
+         Contador = 0;
+         Actualizar_Texto_Status_Timer(Contador);
+         Handle_Mi_Timer = window.setInterval('Mi_Timer()', 1000);  // en milisegundos, 1000=1 segundo
+     }
+
+    function Detener_Timer() {
+         if(Handle_Mi_Timer!=null) {
+             window.clearInterval(Handle_Mi_Timer);
+             Handle_Mi_Timer = null;
+             Actualizar_Texto_Status_Timer("Timer detenido");
+         }
+     }
+
+    function Actualizar_Texto_Status_Timer(Texto) {
+         document.getElementById("Status_Timer").innerHTML = Texto;
+     }
+
+    function Mi_Timer() {
+         Contador++;
+         Actualizar_Texto_Status_Timer(Contador);
+     }
+    </script>
+
 </body>
 </html>
