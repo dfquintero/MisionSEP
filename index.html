@@ -9,15 +9,17 @@
     <link href="SwipeIntro.css" rel="stylesheet" />
     <script src="SwipeIntro.js"></script>
 
+    <script src="Contador.js"></script>
+
     <title>Entropía Misión SEP</title>
 </head>
 <body>
-    <div data-role="page" id="intro1"style="background-image:url(img/Intro/slide1.png); background-size:cover">
+    <div data-role="page" id="intro1" style="background-image:url(img/Intro/slide1.png); background-size:cover">
         <div data-role="footer" data-position="fixed" style="background-color:rgba(255, 255, 255, 0.00)">
             <div data-role="navbar">
                 <ul>
                     <li>
-                    <a class="ui-btn ui-btn-active ui-icon-carat-r ui-btn-icon-right ui-nodisc-icon" href="#intro2" style="background-color:rgba(255, 255, 255, 0.30)">Siguiente</a>
+                        <a class="ui-btn ui-btn-active ui-icon-carat-r ui-btn-icon-right ui-nodisc-icon" href="#intro2" style="background-color:rgba(255, 255, 255, 0.30)">Siguiente</a>
                     </li>
 
                 </ul>
@@ -69,11 +71,25 @@
             <a href="#panelHOME" style="height:40%" data-theme="a">
                 <img src="img/Bmenu.png" style="height:100%" />
             </a>
-            <h1> Hola Soy un Header </h1>
+            <h1> Mi Hogar </h1>
         </div>
         <div role="main" class="ui-content">
             <center>
+                <br />
+                <img src="img/Earth.gif" style="width:70%" />
+                <br />
+                <br />
 
+                <script language="JavaScript">
+                    TargetDate = "12/31/2150 11:59 PM";
+                    BackColor = "white";
+                    ForeColor = "red";
+                    CountActive = true;
+                    CountStepper = -1;
+                    LeadingZero = true;
+                    DisplayFormat = "%%D%% Días, %%H%% Horas, %%M%% Minutos, %%S%% Segundos.";
+                </script>
+                <script language="JavaScript" src="http://ciudad-blogger.googlecode.com/files/countdown.js"></script>
             </center>
         </div>
     </div>
@@ -606,7 +622,9 @@
         <div role="main" class="ui-content">
             <center>
                 <img src="img/EntropiaID.png" />
+                <h4>Desarrollado por:</h4>
                 <h2 style="color:#00aa00">Entropia I+D</h2>
+                <a class="ui-btn ui-" href="#intro1">Volver a ver el inicio</a>
             </center>
         </div>
     </div>
