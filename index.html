@@ -8,60 +8,148 @@
 
     <title>Entropia Misión SEP</title>
 </head>
-<body>
+<body >
     <div data-role="page" id="HOME">
         <div data-role="panel" id="mypanel" data-theme="b" data-display="reveal">
             <ul data-role="listview" data-inset="false">
-                <li data-role="list-divider" style="background-color:darkcyan"><H1 style="text-align:center; font-size:px"> S.E.P.</H1> </li>
+                <li data-role="list-divider" style="background-color:darkcyan"><H1 style="text-align:center;"> S.E.P.</H1> </li>
                 <li><a class="ui-nodisc-icon ui-btn ui-icon-home ui-btn-icon-left" href="#HOME">Home</a></li>
                 <li><a class="ui-nodisc-icon ui-btn ui-icon-check ui-btn-icon-left" href="#Logros">Logros</a></li>
                 <li data-role="list-divider">Misiones</li>
-                <li><a class="ui-nodisc-icon ui-btn ui-icon-cloud ui-btn-icon-left" href="#">Archivo Ambiental</a></li>
-                <li><a class="ui-nodisc-icon ui-btn ui-icon-bullets ui-btn-icon-left" href="#">Eco Acciones</a></li>
-                <li><a class="ui-nodisc-icon ui-btn ui-icon-navigation ui-btn-icon-left" href="#">Reg. EspacioTemporal</a></li>
+                <li><a class="ui-nodisc-icon ui-btn ui-icon-cloud ui-btn-icon-left" href="#ArcAmb">Archivo Ambiental</a></li>
+                <li><a class="ui-nodisc-icon ui-btn ui-icon-bullets ui-btn-icon-left" href="#EcoAcc">Eco Acciones</a></li>
+                <li><a class="ui-nodisc-icon ui-btn ui-icon-navigation ui-btn-icon-left" href="#RegET">Reg. EspacioTemporal</a></li>
                 <li data-role="list-divider">Configuración</li>
-                <li><a class="ui-nodisc-icon ui-btn ui-icon-user ui-btn-icon-left" href="#">Mi Perfil</a></li>
+                <li><a class="ui-nodisc-icon ui-btn ui-icon-user ui-btn-icon-left" href="#Profile">Mi Perfil</a></li>
                 <li><a class="ui-nodisc-icon ui-btn ui-icon-info ui-btn-icon-left" href="#About">Acerca De...</a></li>
             </ul>
         </div>
-        <div data-role="header">
-            <a class="ui-btn ui-icon-bars ui-btn-icon-notext ui-corner-all ui-nodisc-icon ui-alt-icon-alt-icon" href="#mypanel" >No text</a>
+        <div data-role="header" data-theme="b">
+            <a href="#mypanel" style="height:40%" data-theme="a">
+                <img src="img/Bmenu.png" style="height:100%" />
+            </a>
             <h1> Hola Soy un Header </h1>
         </div>
         <div role="main" class="ui-content">
-            <a href="#About">Acerca De...</a>
             <center>
                 
             </center>
         </div>
-        <div data-role="footer" data-position="fixed">Hola soy un Footer</div>
     </div>
-    <div data-role="page" id="About">
+
+    <div data-role="page" id="Logros">
         <div data-role="panel" id="mypanel" data-theme="b" data-display="reveal">
             <ul data-role="listview" data-inset="false">
-                <li data-icon="alert" data-role="list-divider" style="background-color:darkcyan"><H1 style="text-align:center; font-size:large"> S.E.P.</H1> </li>
-                <li data-icon="home"><a href="#HOME">Home</a></li>
-                <li data-icon="home"><a href="#">Logros</a></li>
-                <li data-icon="alert" data-role="list-divider">Misiones</li>
-                <li data-icon="delete"><a href="#">Archivo Ambiental</a></li>
-                <li data-icon="gear"><a href="#">Reconocimiento T</a></li>
-                <li data-icon="info"><a href="#">Denuncias</a></li>
-                <li data-icon="alert" data-role="list-divider">Configuración</li>
-                <li data-icon="user"><a href="#">Mi Perfil</a></li>
-                <li data-icon="info"><a href="#About">Acerca De...</a></li>
+                <li data-role="list-divider" style="background-color:darkcyan"><H1 style="text-align:center;"> S.E.P.</H1> </li>
+                <li><a class="ui-nodisc-icon ui-btn ui-icon-home ui-btn-icon-left" href="#HOME">Home</a></li>
+                <li><a class="ui-nodisc-icon ui-btn ui-icon-check ui-btn-icon-left" href="#Logros">Logros</a></li>
+                <li data-role="list-divider">Misiones</li>
+                <li><a class="ui-nodisc-icon ui-btn ui-icon-cloud ui-btn-icon-left" href="#ArcAmb">Archivo Ambiental</a></li>
+                <li><a class="ui-nodisc-icon ui-btn ui-icon-bullets ui-btn-icon-left" href="#EcoAcc">Eco Acciones</a></li>
+                <li><a class="ui-nodisc-icon ui-btn ui-icon-navigation ui-btn-icon-left" href="#RegET">Reg. EspacioTemporal</a></li>
+                <li data-role="list-divider">Configuración</li>
+                <li><a class="ui-nodisc-icon ui-btn ui-icon-user ui-btn-icon-left" href="#Profile">Mi Perfil</a></li>
+                <li><a class="ui-nodisc-icon ui-btn ui-icon-info ui-btn-icon-left" href="#About">Acerca De...</a></li>
             </ul>
         </div>
-        <div data-role="header">
-            <a class="ui-btn ui-icon-delete ui-btn-icon-notext ui-corner-all" href="#mypanel">No text</a>
-            <h1>Acerca de</h1>
+        <div data-role="header" data-theme="b">
+            <a href="#mypanel" style="height:40%" data-theme="a">
+                <img src="img/Bmenu.png" style="height:100%" />
+            </a>
+            <h1> Hola Soy un Header </h1>
         </div>
         <div role="main" class="ui-content">
             <center>
-                <img src="img/EntropiaID.png" />
-                <h2 style="color:#00aa00">Entropia I+D</h2>
+                <br />
+                <div class="ui-grid-b">
+                    <div class="ui-block-a"><a href="#b1" data-rel="popup"><img src="img/badges/adventurer.png" style="width:60%" /></a></div>
+                    <div class="ui-block-b"><a href="#b2" data-rel="popup"><img src="img/badges/explorer.png" style="width:60%" /></a></div>
+                    <div class="ui-block-c"><a href="#b3" data-rel="popup"><img src="img/badges/dogsbestfriend.png" style="width:60%" /></a></div>
+                    <div class="ui-block-a"><a href="#b4" data-rel="popup"><img src="img/badges/entourage.png" style="width:60%" /></a></div>
+                    <div class="ui-block-b"><a href="#b5" data-rel="popup"><img src="img/badges/greatoutdoors.png" style="width:60%" /></a></div>
+                    <div class="ui-block-c"><a href="#b6" data-rel="popup"><img src="img/badges/intel_all_ears.png" style="width:60%" /></a></div>
+                    <div class="ui-block-a"><a href="#b7" data-rel="popup"><img src="img/badges/northpole.png" style="width:60%" /></a></div>
+                    <div class="ui-block-b"><a href="#b8" data-rel="popup"><img src="img/badges/runkeeper-warmup.png" style="width:60%" /></a></div>
+                    <div class="ui-block-c"><a href="#b9" data-rel="popup"><img src="img/badges/twtrcon.png" style="width:60%" /></a></div>
+                    <div class="ui-block-a"><a href="#popgris" data-rel="popup" data-transition="flip" data-position-to="origin"><img src="img/badges/gris.png" style="width:60%" /></a></div>
+                    <div class="ui-block-b"><a href="#popgris" data-rel="popup" data-transition="flip" data-position-to="origin"><img src="img/badges/gris.png" style="width:60%" /></a></div>
+                    <div class="ui-block-c"><a href="#popgris" data-rel="popup" data-transition="flip" data-position-to="origin"><img src="img/badges/gris.png" style="width:60%" /></a></div>
+                    <div class="ui-block-a"><a href="#popgris" data-rel="popup" data-transition="flip" data-position-to="origin"><img src="img/badges/gris.png" style="width:60%" /></a></div>
+                    <div class="ui-block-b"><a href="#popgris" data-rel="popup" data-transition="flip" data-position-to="origin"><img src="img/badges/gris.png" style="width:60%" /></a></div>
+                    <div class="ui-block-c"><a href="#popgris" data-rel="popup" data-transition="flip" data-position-to="origin"><img src="img/badges/gris.png" style="width:60%" /></a></div>
+                    <div class="ui-block-a"><a href="#popgris" data-rel="popup" data-transition="flip" data-position-to="origin"><img src="img/badges/gris.png" style="width:60%" /></a></div>
+                    <div class="ui-block-b"><a href="#popgris" data-rel="popup" data-transition="flip" data-position-to="origin"><img src="img/badges/gris.png" style="width:60%" /></a></div>
+                    <div class="ui-block-c"><a href="#popgris" data-rel="popup" data-transition="flip" data-position-to="origin"><img src="img/badges/gris.png" style="width:60%" /></a></div>
+                    <div class="ui-block-a"><a href="#popgris" data-rel="popup" data-transition="flip" data-position-to="origin"><img src="img/badges/gris.png" style="width:60%" /></a></div>
+                    <div class="ui-block-b"><a href="#popgris" data-rel="popup" data-transition="flip" data-position-to="origin"><img src="img/badges/gris.png" style="width:60%" /></a></div>
+                    <div class="ui-block-c"><a href="#popgris" data-rel="popup" data-transition="flip" data-position-to="origin"><img src="img/badges/gris.png" style="width:60%" /></a></div>
+                    <div class="ui-block-a"><a href="#popgris" data-rel="popup" data-transition="flip" data-position-to="origin"><img src="img/badges/gris.png" style="width:60%" /></a></div>
+                    <div class="ui-block-b"><a href="#popgris" data-rel="popup" data-transition="flip" data-position-to="origin"><img src="img/badges/gris.png" style="width:60%" /></a></div>
+                    <div class="ui-block-c"><a href="#popgris" data-rel="popup" data-transition="flip" data-position-to="origin"><img src="img/badges/gris.png" style="width:60%" /></a></div>
+                </div>
             </center>
         </div>
     </div>
+
+    <div data-role="page" id="ArcAmb">
+        <div data-role="panel" id="mypanel" data-theme="b" data-display="reveal">
+            <ul data-role="listview" data-inset="false">
+                <li data-role="list-divider" style="background-color:darkcyan"><H1 style="text-align:center;"> S.E.P.</H1> </li>
+                <li><a class="ui-nodisc-icon ui-btn ui-icon-home ui-btn-icon-left" href="#HOME">Home</a></li>
+                <li><a class="ui-nodisc-icon ui-btn ui-icon-check ui-btn-icon-left" href="#Logros">Logros</a></li>
+                <li data-role="list-divider">Misiones</li>
+                <li><a class="ui-nodisc-icon ui-btn ui-icon-cloud ui-btn-icon-left" href="#ArcAmb">Archivo Ambiental</a></li>
+                <li><a class="ui-nodisc-icon ui-btn ui-icon-bullets ui-btn-icon-left" href="#EcoAcc">Eco Acciones</a></li>
+                <li><a class="ui-nodisc-icon ui-btn ui-icon-navigation ui-btn-icon-left" href="#RegET">Reg. EspacioTemporal</a></li>
+                <li data-role="list-divider">Configuración</li>
+                <li><a class="ui-nodisc-icon ui-btn ui-icon-user ui-btn-icon-left" href="#Profile">Mi Perfil</a></li>
+                <li><a class="ui-nodisc-icon ui-btn ui-icon-info ui-btn-icon-left" href="#About">Acerca De...</a></li>
+            </ul>
+        </div>
+        <div data-role="header" data-theme="b">
+            <a href="#mypanel" style="height:40%" data-theme="a">
+                <img src="img/Bmenu.png" style="height:100%" />
+            </a>
+            <h1> Hola Soy un Header </h1>
+        </div>
+        <div role="main" class="ui-content">
+            <center>
+
+            </center>
+        </div>
+    </div>
+    
+    <div data-role="page" id="EcoAcc">
+        <div data-role="panel" id="mypanel" data-theme="b" data-display="reveal">
+            <ul data-role="listview" data-inset="false">
+                <li data-role="list-divider" style="background-color:darkcyan"><H1 style="text-align:center;"> S.E.P.</H1> </li>
+                <li><a class="ui-nodisc-icon ui-btn ui-icon-home ui-btn-icon-left" href="#HOME">Home</a></li>
+                <li><a class="ui-nodisc-icon ui-btn ui-icon-check ui-btn-icon-left" href="#Logros">Logros</a></li>
+                <li data-role="list-divider">Misiones</li>
+                <li><a class="ui-nodisc-icon ui-btn ui-icon-cloud ui-btn-icon-left" href="#ArcAmb">Archivo Ambiental</a></li>
+                <li><a class="ui-nodisc-icon ui-btn ui-icon-bullets ui-btn-icon-left" href="#EcoAcc">Eco Acciones</a></li>
+                <li><a class="ui-nodisc-icon ui-btn ui-icon-navigation ui-btn-icon-left" href="#RegET">Reg. EspacioTemporal</a></li>
+                <li data-role="list-divider">Configuración</li>
+                <li><a class="ui-nodisc-icon ui-btn ui-icon-user ui-btn-icon-left" href="#Profile">Mi Perfil</a></li>
+                <li><a class="ui-nodisc-icon ui-btn ui-icon-info ui-btn-icon-left" href="#About">Acerca De...</a></li>
+            </ul>
+        </div>
+        <div data-role="header" data-theme="b">
+            <a href="#mypanel" style="height:40%" data-theme="a">
+                <img src="img/Bmenu.png" style="height:100%" />
+            </a>
+            <h1> Hola Soy un Header </h1>
+        </div>
+        <div role="main" class="ui-content">
+            <center>
+
+            </center>
+        </div>
+    </div>
+
+
+
+
     <div data-role="page" id="About">
         <div data-role="panel" id="mypanel" data-theme="b" data-display="reveal">
             <ul data-role="listview" data-inset="false">
