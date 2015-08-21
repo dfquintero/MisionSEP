@@ -14,7 +14,7 @@
             <ul data-role="listview" data-inset="false">
                 <li data-role="list-divider" style="background-color:darkcyan"><H1 style="text-align:center; font-size:px"> S.E.P.</H1> </li>
                 <li><a class="ui-nodisc-icon ui-btn ui-icon-home ui-btn-icon-left" href="#HOME">Home</a></li>
-                <li><a class="ui-nodisc-icon ui-btn ui-icon-check ui-btn-icon-left" href="#">Logros</a></li>
+                <li><a class="ui-nodisc-icon ui-btn ui-icon-check ui-btn-icon-left" href="#Logros">Logros</a></li>
                 <li data-role="list-divider">Misiones</li>
                 <li><a class="ui-nodisc-icon ui-btn ui-icon-cloud ui-btn-icon-left" href="#">Archivo Ambiental</a></li>
                 <li><a class="ui-nodisc-icon ui-btn ui-icon-bullets ui-btn-icon-left" href="#">Eco Acciones</a></li>
@@ -35,7 +35,32 @@
             </center>
         </div>
         <div data-role="footer" data-position="fixed">Hola soy un Footer</div>
-
+    </div>
+    <div data-role="page" id="About">
+        <div data-role="panel" id="mypanel" data-theme="b" data-display="reveal">
+            <ul data-role="listview" data-inset="false">
+                <li data-icon="alert" data-role="list-divider" style="background-color:darkcyan"><H1 style="text-align:center; font-size:large"> S.E.P.</H1> </li>
+                <li data-icon="home"><a href="#HOME">Home</a></li>
+                <li data-icon="home"><a href="#">Logros</a></li>
+                <li data-icon="alert" data-role="list-divider">Misiones</li>
+                <li data-icon="delete"><a href="#">Archivo Ambiental</a></li>
+                <li data-icon="gear"><a href="#">Reconocimiento T</a></li>
+                <li data-icon="info"><a href="#">Denuncias</a></li>
+                <li data-icon="alert" data-role="list-divider">Configuración</li>
+                <li data-icon="user"><a href="#">Mi Perfil</a></li>
+                <li data-icon="info"><a href="#About">Acerca De...</a></li>
+            </ul>
+        </div>
+        <div data-role="header">
+            <a class="ui-btn ui-icon-delete ui-btn-icon-notext ui-corner-all" href="#mypanel">No text</a>
+            <h1>Acerca de</h1>
+        </div>
+        <div role="main" class="ui-content">
+            <center>
+                <img src="img/EntropiaID.png" />
+                <h2 style="color:#00aa00">Entropia I+D</h2>
+            </center>
+        </div>
     </div>
     <div data-role="page" id="About">
         <div data-role="panel" id="mypanel" data-theme="b" data-display="reveal">
