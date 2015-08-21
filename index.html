@@ -5,24 +5,50 @@
     <script src="jQuery/jquery-2.1.4.min.js"></script>
     <script src="jQuery/jquery.mobile/jquery.mobile-1.4.5.min.js"></script>
     <link href="jQuery/jquery.mobile/jquery.mobile-1.4.5.min.css" rel="stylesheet" />
-    
+
     <link href="SwipeIntro.css" rel="stylesheet" />
     <script src="SwipeIntro.js"></script>
 
     <title>Entropía Misión SEP</title>
 </head>
-<body >
-    <div class="demo-page" id="city" data-role="page" data-url="city" data-theme="b" data-next="nextCity" data-prev="prevCity" data-dom-cache="true">
-        <div class="ui-content" role="main">
-            <div class="trivia ui-content" id="trivia-city" data-role="popup" data-theme="a" data-position-to="window" data-tolerance="50,30,30,30">
-                <a class="ui-btn ui-btn-right ui-btn-b ui-btn-icon-notext ui-icon-delete ui-corner-all" href="#" data-rel="back">Close</a>
-                <p>Here some text.</p>
-            </div><!-- /popup -->
-        </div><!-- /content -->
-    </div>
-    <div data-role="page" id="newyork">
+<body>
+    <div data-role="page" id="intro1"style="background-image:url(img/Intro/slide1.png); background-size:cover">
+        <div data-role="footer" data-position="fixed" style="background-color:rgba(255, 255, 255, 0.00)">
+            <div data-role="navbar">
+                <ul>
+                    <li>
+                    <a class="ui-btn ui-btn-active ui-icon-carat-r ui-btn-icon-right ui-nodisc-icon" href="#intro2" style="background-color:rgba(255, 255, 255, 0.30)">Siguiente</a>
+                    </li>
 
+                </ul>
+            </div>
+        </div>
     </div>
+    <div data-role="page" id="intro2" style="background-image:url(img/Intro/slide2.png); background-size:cover">
+        <div data-role="footer" data-position="fixed" style="background-color:rgba(255, 255, 255, 0.00)">
+            <div data-role="navbar">
+                <ul>
+                    <li>
+                        <a class="ui-btn ui-btn-active ui-icon-carat-r ui-btn-icon-right ui-nodisc-icon" href="#intro3" style="background-color:rgba(255, 255, 255, 0.30)">Siguiente</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div data-role="page" id="intro3" style="background-image:url(img/Intro/slide3.png); background-size:cover">
+        <div data-role="footer" data-position="fixed" style="background-color:rgba(255, 255, 255, 0.00)">
+            <div data-role="navbar">
+                <ul>
+                    <li>
+                        <a class="ui-btn ui-btn-active ui-icon-carat-r ui-btn-icon-right ui-nodisc-icon" href="#HOME" style="background-color:rgba(255, 255, 255, 0.30)">Siguiente</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+
 
     <div data-role="page" id="HOME">
         <div data-role="panel" id="panelHOME" data-theme="b" data-display="reveal">
@@ -47,7 +73,7 @@
         </div>
         <div role="main" class="ui-content">
             <center>
-                
+
             </center>
         </div>
     </div>
@@ -79,7 +105,7 @@
                 <div class="ui-grid-b">
                     <div class="ui-block-a"><a href="#b1" data-rel="popup"><img src="img/Trofeos/tro1.png" style="width:60%" /></a></div>
                     <div class="ui-block-b"><a href="#b2" data-rel="popup"><img src="img/Trofeos/tro2.png" style="width:60%" /></a></div>
-                    <div class="ui-block-c"><a href="#b3" data-rel ="popup"><img src="img/Trofeos/tro3.png" style="width:60%" /></a></div>
+                    <div class="ui-block-c"><a href="#b3" data-rel="popup"><img src="img/Trofeos/tro3.png" style="width:60%" /></a></div>
                     <div class="ui-block-a"><a href="#b4" data-rel="popup"><img src="img/Trofeos/tro4.png" style="width:60%" /></a></div>
                     <div class="ui-block-b"><a href="#b5" data-rel="popup"><img src="img/Trofeos/tro5.png" style="width:60%" /></a></div>
                     <div class="ui-block-c"><a href="#b6" data-rel="popup"><img src="img/Trofeos/tro6.png" style="width:60%" /></a></div>
@@ -89,50 +115,51 @@
                 </div>
             </center>
 
-                <div data-role="popup" id="b1">
-                    <p>
-                        This is a completely basic popup, no options set.
-                    </p>
-                </div>
-                <div data-role="popup" id="b2">
-                    <p>
-                        This is a completely basic popup, no options set.
-                    </p> 
-                </div>
-                <div data-role="popup" id="b3">
-                    <p>
-                        This is a completely basic popup, no options set.
-                    </p>
-                </div>
-                <div data-role="popup" id="b4">
-                    <p>
-                        This is a completely basic popup, no options set.
-                    </p> 
-                </div>
-                <div data-role="popup" id="b5">
-                    <p>
-                        This is a completely basic popup, no options set.</p> 
-                </div>
-                <div data-role="popup" id="b6">
-                    <p>
-                        This is a completely basic popup, no options set.
-                    </p> 
-                </div>
-                <div data-role="popup" id="b7">
-                    <p>
-                        This is a completely basic popup, no options set.
-                    </p> 
-                </div>
-                <div data-role="popup" id="b8">
-                    <p>
-                        This is a completely basic popup, no options set.
-                    </p> 
-                </div>
-                 <div data-role="popup" id="b9">
-                    <p>
-                        This is a completely basic popup, no options set.
-                    </p> 
-                </div>
+            <div data-role="popup" id="b1">
+                <p>
+                    This is a completely basic popup, no options set.
+                </p>
+            </div>
+            <div data-role="popup" id="b2">
+                <p>
+                    This is a completely basic popup, no options set.
+                </p>
+            </div>
+            <div data-role="popup" id="b3">
+                <p>
+                    This is a completely basic popup, no options set.
+                </p>
+            </div>
+            <div data-role="popup" id="b4">
+                <p>
+                    This is a completely basic popup, no options set.
+                </p>
+            </div>
+            <div data-role="popup" id="b5">
+                <p>
+                    This is a completely basic popup, no options set.
+                </p>
+            </div>
+            <div data-role="popup" id="b6">
+                <p>
+                    This is a completely basic popup, no options set.
+                </p>
+            </div>
+            <div data-role="popup" id="b7">
+                <p>
+                    This is a completely basic popup, no options set.
+                </p>
+            </div>
+            <div data-role="popup" id="b8">
+                <p>
+                    This is a completely basic popup, no options set.
+                </p>
+            </div>
+            <div data-role="popup" id="b9">
+                <p>
+                    This is a completely basic popup, no options set.
+                </p>
+            </div>
         </div>
     </div>
 
@@ -163,7 +190,7 @@
             </center>
         </div>
     </div>
-      
+
 
 
     <div data-role="page" id="EcoAcc">
@@ -201,7 +228,7 @@
                     <a href="#">
                         <img src="../_assets/img/album-hc.jpg">
                         <h2>Warning</h2>
-                        <h4 style="color:lightgreen" >(+ 00:00:00)</h4>
+                        <h4 style="color:lightgreen">(+ 00:00:00)</h4>
                     </a>
                 </li>
                 <li>
