@@ -1,0 +1,636 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+    <script src="jQuery/jquery-2.1.4.min.js"></script>
+    <script src="jQuery/jquery.mobile/jquery.mobile-1.4.5.min.js"></script>
+    <link href="jQuery/jquery.mobile/jquery.mobile-1.4.5.min.css" rel="stylesheet" />
+
+    <link href="SwipeIntro.css" rel="stylesheet" />
+    <script src="SwipeIntro.js"></script>
+
+    <script src="Contador.js"></script>
+
+    <title>Entropía Misión SEP</title>
+</head>
+<body>
+    <div data-role="page" id="intro1" style="background-image:url(img/Intro/slide1.png); background-size:cover">
+        <div data-role="footer" data-position="fixed" style="background-color:rgba(255, 255, 255, 0.00)">
+            <div data-role="navbar">
+                <ul>
+                    <li>
+                        <a class="ui-btn ui-btn-active ui-icon-carat-r ui-btn-icon-right ui-nodisc-icon" href="#intro2" style="background-color:rgba(255, 255, 255, 0.30)">Siguiente</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div data-role="page" id="intro2" style="background-image:url(img/Intro/slide2.png); background-size:cover">
+        <div data-role="footer" data-position="fixed" style="background-color:rgba(255, 255, 255, 0.00)">
+            <div data-role="navbar">
+                <ul>
+                    <li>
+                        <a class="ui-btn ui-btn-active ui-icon-carat-r ui-btn-icon-right ui-nodisc-icon" href="#intro3" style="background-color:rgba(255, 255, 255, 0.30)">Siguiente</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div data-role="page" id="intro3" style="background-image:url(img/Intro/slide3.png); background-size:cover">
+        <div data-role="footer" data-position="fixed" style="background-color:rgba(255, 255, 255, 0.00)">
+            <div data-role="navbar">
+                <ul>
+                    <li>
+                        <a class="ui-btn ui-btn-active ui-icon-carat-r ui-btn-icon-right ui-nodisc-icon" href="#HOME" style="background-color:rgba(255, 255, 255, 0.30)">Siguiente</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <div data-role="page" id="HOME">
+        <div data-role="panel" id="panelHOME" data-theme="b" data-display="reveal">
+            <ul data-role="listview" data-inset="false">
+                <li data-role="list-divider" style="background-color:darkcyan"><H1 style="text-align:center;"> S.E.P.</H1> </li>
+                <li><a class="ui-nodisc-icon ui-btn ui-icon-home ui-btn-icon-left" href="#HOME">Home</a></li>
+                <li><a class="ui-nodisc-icon ui-btn ui-icon-check ui-btn-icon-left" href="#Logros">Logros</a></li>
+                <li data-role="list-divider">Misiones</li>
+                <li><a class="ui-nodisc-icon ui-btn ui-icon-cloud ui-btn-icon-left" href="#ArcAmb">Archivo Ambiental</a></li>
+                <li><a class="ui-nodisc-icon ui-btn ui-icon-bullets ui-btn-icon-left" href="#EcoAcc">Eco Acciones</a></li>
+                <li><a class="ui-nodisc-icon ui-btn ui-icon-navigation ui-btn-icon-left" href="#RegET">Reg. EspacioTemporal</a></li>
+                <li data-role="list-divider">Configuración</li>
+                <li><a class="ui-nodisc-icon ui-btn ui-icon-user ui-btn-icon-left" href="#Profile">Mi Perfil</a></li>
+                <li><a class="ui-nodisc-icon ui-btn ui-icon-info ui-btn-icon-left" href="#About">Acerca De...</a></li>
+            </ul>
+        </div>
+        <div data-role="header" data-theme="b">
+            <a href="#panelHOME" style="height:40%" data-theme="a">
+                <img src="img/Bmenu.png" style="height:100%" />
+            </a>
+            <h1> Mi Hogar </h1>
+        </div>
+        <div role="main" class="ui-content">
+            <center>
+                <br />
+                <img src="img/Earth.gif" style="width:70%" />
+                <br />
+                <br />
+
+                <script language="JavaScript">
+                    TargetDate = "12/31/2150 11:59 PM";
+                    BackColor = "white";
+                    ForeColor = "red";
+                    CountActive = true;
+                    CountStepper = -1;
+                    LeadingZero = true;
+                    DisplayFormat = "%%D%% Días, %%H%% Horas, %%M%% Minutos, %%S%% Segundos.";
+                </script>
+                <script language="JavaScript" src="http://ciudad-blogger.googlecode.com/files/countdown.js"></script>
+            </center>
+        </div>
+    </div>
+
+    <div data-role="page" id="Logros">
+        <div data-role="panel" id="panelLogros" data-theme="b" data-display="reveal">
+            <ul data-role="listview" data-inset="false">
+                <li data-role="list-divider" style="background-color:darkcyan"><H1 style="text-align:center;"> S.E.P.</H1> </li>
+                <li><a class="ui-nodisc-icon ui-btn ui-icon-home ui-btn-icon-left" href="#HOME">Home</a></li>
+                <li><a class="ui-nodisc-icon ui-btn ui-icon-check ui-btn-icon-left" href="#Logros">Logros</a></li>
+                <li data-role="list-divider">Misiones</li>
+                <li><a class="ui-nodisc-icon ui-btn ui-icon-cloud ui-btn-icon-left" href="#ArcAmb">Archivo Ambiental</a></li>
+                <li><a class="ui-nodisc-icon ui-btn ui-icon-bullets ui-btn-icon-left" href="#EcoAcc">Eco Acciones</a></li>
+                <li><a class="ui-nodisc-icon ui-btn ui-icon-navigation ui-btn-icon-left" href="#RegET">Reg. EspacioTemporal</a></li>
+                <li data-role="list-divider">Configuración</li>
+                <li><a class="ui-nodisc-icon ui-btn ui-icon-user ui-btn-icon-left" href="#Profile">Mi Perfil</a></li>
+                <li><a class="ui-nodisc-icon ui-btn ui-icon-info ui-btn-icon-left" href="#About">Acerca De...</a></li>
+            </ul>
+        </div>
+        <div data-role="header" data-theme="b">
+            <a href="#panelLogros" style="height:40%" data-theme="a">
+                <img src="img/Bmenu.png" style="height:100%" />
+            </a>
+            <h1> Logros </h1>
+        </div>
+        <div role="main" class="ui-content">
+            <center>
+                <br />
+                <div class="ui-grid-b">
+                    <div class="ui-block-a"><a href="#b1" data-rel="popup"><img src="img/Trofeos/tro1.png" style="width:60%" /></a></div>
+                    <div class="ui-block-b"><a href="#b2" data-rel="popup"><img src="img/Trofeos/tro2.png" style="width:60%" /></a></div>
+                    <div class="ui-block-c"><a href="#b3" data-rel="popup"><img src="img/Trofeos/tro3.png" style="width:60%" /></a></div>
+                    <div class="ui-block-a"><a href="#b4" data-rel="popup"><img src="img/Trofeos/tro4.png" style="width:60%" /></a></div>
+                    <div class="ui-block-b"><a href="#b5" data-rel="popup"><img src="img/Trofeos/tro5.png" style="width:60%" /></a></div>
+                    <div class="ui-block-c"><a href="#b6" data-rel="popup"><img src="img/Trofeos/tro6.png" style="width:60%" /></a></div>
+                    <div class="ui-block-a"><a href="#b7" data-rel="popup"><img src="img/Trofeos/tro7.png" style="width:60%" /></a></div>
+                    <div class="ui-block-b"><a href="#b8" data-rel="popup"><img src="img/Trofeos/tro8.png" style="width:60%" /></a></div>
+                    <div class="ui-block-c"><a href="#b9" data-rel="popup"><img src="img/Trofeos/tro9.png" style="width:60%" /></a></div>
+                </div>
+            </center>
+
+            <div data-role="popup" id="b1">
+                <p>
+                    This is a completely basic popup, no options set.
+                </p>
+            </div>
+            <div data-role="popup" id="b2">
+                <p>
+                    This is a completely basic popup, no options set.
+                </p>
+            </div>
+            <div data-role="popup" id="b3">
+                <p>
+                    This is a completely basic popup, no options set.
+                </p>
+            </div>
+            <div data-role="popup" id="b4">
+                <p>
+                    This is a completely basic popup, no options set.
+                </p>
+            </div>
+            <div data-role="popup" id="b5">
+                <p>
+                    This is a completely basic popup, no options set.
+                </p>
+            </div>
+            <div data-role="popup" id="b6">
+                <p>
+                    This is a completely basic popup, no options set.
+                </p>
+            </div>
+            <div data-role="popup" id="b7">
+                <p>
+                    This is a completely basic popup, no options set.
+                </p>
+            </div>
+            <div data-role="popup" id="b8">
+                <p>
+                    This is a completely basic popup, no options set.
+                </p>
+            </div>
+            <div data-role="popup" id="b9">
+                <p>
+                    This is a completely basic popup, no options set.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div data-role="page" id="ArcAmb">
+        <div data-role="panel" id="panelArcAmb" data-theme="b" data-display="reveal">
+            <ul data-role="listview" data-inset="false">
+                <li data-role="list-divider" style="background-color:darkcyan"><H1 style="text-align:center;"> S.E.P.</H1> </li>
+                <li><a class="ui-nodisc-icon ui-btn ui-icon-home ui-btn-icon-left" href="#HOME">Home</a></li>
+                <li><a class="ui-nodisc-icon ui-btn ui-icon-check ui-btn-icon-left" href="#Logros">Logros</a></li>
+                <li data-role="list-divider">Misiones</li>
+                <li><a class="ui-nodisc-icon ui-btn ui-icon-cloud ui-btn-icon-left" href="#ArcAmb">Archivo Ambiental</a></li>
+                <li><a class="ui-nodisc-icon ui-btn ui-icon-bullets ui-btn-icon-left" href="#EcoAcc">Eco Acciones</a></li>
+                <li><a class="ui-nodisc-icon ui-btn ui-icon-navigation ui-btn-icon-left" href="#RegET">Reg. EspacioTemporal</a></li>
+                <li data-role="list-divider">Configuración</li>
+                <li><a class="ui-nodisc-icon ui-btn ui-icon-user ui-btn-icon-left" href="#Profile">Mi Perfil</a></li>
+                <li><a class="ui-nodisc-icon ui-btn ui-icon-info ui-btn-icon-left" href="#About">Acerca De...</a></li>
+            </ul>
+        </div>
+        <div data-role="header" data-theme="b">
+            <a href="#panelArcAmb" style="height:40%" data-theme="a">
+                <img src="img/Bmenu.png" style="height:100%" />
+            </a>
+            <h1> Archivo Ambiental </h1>
+        </div>
+        <div role="main" class="ui-content">
+            <center>
+
+            </center>
+        </div>
+    </div>
+
+
+
+    <div data-role="page" id="EcoAcc">
+        <div data-role="panel" id="panelEcoAcc" data-theme="b" data-display="reveal">
+            <ul data-role="listview" data-inset="false">
+                <li data-role="list-divider" style="background-color:darkcyan"><H1 style="text-align:center;"> S.E.P.</H1> </li>
+                <li><a class="ui-nodisc-icon ui-btn ui-icon-home ui-btn-icon-left" href="#HOME">Home</a></li>
+                <li><a class="ui-nodisc-icon ui-btn ui-icon-check ui-btn-icon-left" href="#Logros">Logros</a></li>
+                <li data-role="list-divider">Misiones</li>
+                <li><a class="ui-nodisc-icon ui-btn ui-icon-cloud ui-btn-icon-left" href="#ArcAmb">Archivo Ambiental</a></li>
+                <li><a class="ui-nodisc-icon ui-btn ui-icon-bullets ui-btn-icon-left" href="#EcoAcc">Eco Acciones</a></li>
+                <li><a class="ui-nodisc-icon ui-btn ui-icon-navigation ui-btn-icon-left" href="#RegET">Reg. EspacioTemporal</a></li>
+                <li data-role="list-divider">Configuración</li>
+                <li><a class="ui-nodisc-icon ui-btn ui-icon-user ui-btn-icon-left" href="#Profile">Mi Perfil</a></li>
+                <li><a class="ui-nodisc-icon ui-btn ui-icon-info ui-btn-icon-left" href="#About">Acerca De...</a></li>
+            </ul>
+        </div>
+        <div data-role="header" data-theme="b">
+            <a href="#panelEcoAcc" style="height:40%" data-theme="a">
+                <img src="img/Bmenu.png" style="height:100%" />
+            </a>
+            <h1> EcoAcciones </h1>
+        </div>
+        <div role="main" class="ui-content">
+
+            <ul data-role="listview" data-inset="true" class="ui-nodisc-icon ui-alt-icon" style="color:">
+                <li>
+                    <a href="#EcoAcc1">
+                        <img src="img/EcoAcc/1inicial.jpg">
+                        <h2>Separar en la fuente</h2>
+                        <h4 style="color:lightgreen">(+ 144:00:00)</h4>
+                    </a>
+                </li>
+                <li>
+                    <a href="#EcoAcc2">
+                        <img src="img/EcoAcc/2inicial.jpg" />
+                        <h2>Ahorradores de agua</h2>
+                        <h4 style="color:lightgreen">(+ 72:00:00)</h4>
+                    </a>
+                </li>
+                <li>
+                    <a href="#EcoAcc3">
+                        <img src="img/EcoAcc/3inicial.jpg" />
+                        <h2>Recirculación del agua</h2>
+                        <h4 style="color:lightgreen">(+ 72:00:00)</h4>
+                    </a>
+                </li>
+                <li>
+                    <a href="#EcoAcc4">
+                        <img src="img/EcoAcc/4incial.jpg" />
+                        <h2>Agricultura Urbana</h2>
+                        <h4 style="color:lightgreen">(+ 144:00:00)</h4>
+                    </a>
+                </li>
+                <li>
+                    <a href="#EcoAcc5">
+                        <img src="img/EcoAcc/5inicial.jpg" />
+                        <h2>Planta un arbol</h2>
+                        <h4 style="color:lightgreen">(+ 144:00:00)</h4>
+                    </a>
+                </li>
+                <li>
+                    <a href="#EcoAcc6">
+                        <img src="img/EcoAcc/6inicial.jpg" />
+                        <h2>Reducir consumo de energia</h2>
+                        <h4 style="color:lightgreen">(+ 288:00:00)</h4>
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+    </div>
+
+    <!--EcoAcciones#-->
+    <div data-role="page" id="EcoAcc1">
+        <div data-role="header">
+            <h1>
+                Separar en la fuente
+            </h1>
+        </div>
+        <div role="main" class="ui-content">
+            <center>
+                <br />
+                <img src="img/EcoAcc/1explicacion.jpg" />
+                <p>
+                    Al clasificar tus residuos sólidos, permites que se puedan aprovechar nuevamente ya sea reusando algunos productos, reciclando materias primas y reducción el consumo de recursos naturales.
+                    Puedes Utilizar cualquier tipo de contenedores a partir de materiales reciclados como botellas, recipientes o cualquier elemento con algo de imaginación y poder diferenciar residuos orgánicos como restos de comida y servilletas de los residuos inorgánicos como plásticos, vidrio, metal entre otros
+                </p> <b></b>
+                <img />
+
+                <div data-role="navbar" style="width:80%">
+                    <ul>
+                        <li><a class="ui-btn ui-alt-icon ui-icon-camera ui-btn-icon-top ui-nodisc-icon" href="#smile1" data-rel="popup" data-position-to="origin">Post FB</a></li>
+                        <li><a class="ui-btn ui-alt-icon ui-icon-edit ui-btn-icon-top ui-nodisc-icon" href="#smile1" data-rel="popup" data-position-to="origin">Tweet</a></li>
+                        <li><a class="ui-btn ui-alt-icon ui-icon-location ui-btn-icon-top ui-nodisc-icon" href="#smile1" data-rel="popup" data-position-to="origin">Ubicación</a></li>
+                    </ul>
+                </div>
+            </center>
+
+
+        </div>
+        <div id="smile1" data-role="popup" style="Background-color:(255,255,255,0.30); border:0px; width:30%; ">
+            <img src="img/smile.png" style="width:100%" />
+        </div>
+
+        <div data-role="footer" data-position="fixed">
+            <div data-role="navbar">
+                <ul>
+                    <li><a class="ui-btn ui-btn-active  ui-alt-icon ui-icon-back ui-btn-icon-top" href="#EcoAcc">Volver</a></li>
+
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    
+    <div data-role="page" id="EcoAcc2">
+        <div data-role="header">
+            <h1>
+                Ahorradores de Agua
+            </h1>
+        </div>
+        <div role="main" class="ui-content">
+            <center>
+                <br />
+                <img src="img/EcoAcc/2explicacion.jpg" />
+                <p>
+                    La reducción en el consumo de agua es un punto muy importante, en el futuro este recurso será más valioso que el oro, los diamantes, el petróleo o cualquier otro, ya que es el recurso de vida pero con fuentes cada vez más escasas y contaminadas.
+                    Ayúdanos a conservarla y darle un buen uso, evitando su contaminación y disminuyendo su consumo, recuerda que nosotros somos 70% agua, si llenas una botella de agua y la metes en el tanque del sanitario será un volumen de agua que podrá ser conservada y no tendrá que caer al alcantarillado local, también puedes usar un ladrillo o algún otro elemento que logra desplazar el volumen del agua a ahorrar.
+
+                </p> <b></b>
+                <img />
+
+                <div data-role="navbar" style="width:80%">
+                    <ul>
+                        <li><a class="ui-btn ui-alt-icon ui-icon-camera ui-btn-icon-top ui-nodisc-icon" href="#smile2" data-rel="popup" data-position-to="origin">Post FB</a></li>
+                        <li><a class="ui-btn ui-alt-icon ui-icon-edit ui-btn-icon-top ui-nodisc-icon" href="#smile2" data-rel="popup" data-position-to="origin">Tweet</a></li>
+                        <li><a class="ui-btn ui-alt-icon ui-icon-location ui-btn-icon-top ui-nodisc-icon" href="#smile2" data-rel="popup" data-position-to="origin">Ubicación</a></li>
+                    </ul>
+                </div>
+            </center>
+
+
+        </div>
+        <div id="smile2" data-role="popup" style="Background-color:(255,255,255,0.30); border:0px; width:30%; ">
+            <img src="img/smile.png" style="width:100%" />
+        </div>
+
+        <div data-role="footer" data-position="fixed">
+            <div data-role="navbar">
+                <ul>
+                    <li><a class="ui-btn ui-btn-active  ui-alt-icon ui-icon-back ui-btn-icon-top" href="#EcoAcc">Volver</a></li>
+
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+    <div data-role="page" id="EcoAcc3">
+        <div data-role="header">
+            <h1>
+                Recirculación de Aguas
+            </h1>
+        </div>
+        <div role="main" class="ui-content">
+            <center>
+                <br />
+                <img src="img/EcoAcc/3explicacion.jpg" />
+                <p>
+                    La reducción en el consumo de agua es un punto muy importante, en el futuro este recurso será más valioso que el oro, los diamantes, el petróleo o cualquier otro, ya que es el recurso de vida pero con fuentes cada vez más escasas y contaminadas.
+                    Ayúdanos a conservarla y darle un buen uso, evitando su contaminación y disminuyendo su consumo, recuerda que nosotros somos 70% agua, si llenas una botella de agua y la metes en el tanque del sanitario será un volumen de agua que podrá ser conservada y no tendrá que caer al alcantarillado local, también puedes usar un ladrillo o algún otro elemento que logra desplazar el volumen del agua a ahorrar.
+
+                </p> <b></b>
+                <img />
+
+                <div data-role="navbar" style="width:80%">
+                    <ul>
+                        <li><a class="ui-btn ui-alt-icon ui-icon-camera ui-btn-icon-top ui-nodisc-icon" href="#smile3" data-rel="popup" data-position-to="origin">Post FB</a></li>
+                        <li><a class="ui-btn ui-alt-icon ui-icon-edit ui-btn-icon-top ui-nodisc-icon" href="#smile3" data-rel="popup" data-position-to="origin">Tweet</a></li>
+                        <li><a class="ui-btn ui-alt-icon ui-icon-location ui-btn-icon-top ui-nodisc-icon" href="#smile3" data-rel="popup" data-position-to="origin">Ubicación</a></li>
+                    </ul>
+                </div>
+            </center>
+
+
+        </div>
+        <div id="smile3" data-role="popup" style="Background-color:(255,255,255,0.30); border:0px; width:30%; ">
+            <img src="img/smile.png" style="width:100%" />
+        </div>
+
+        <div data-role="footer" data-position="fixed">
+            <div data-role="navbar">
+                <ul>
+                    <li><a class="ui-btn ui-btn-active  ui-alt-icon ui-icon-back ui-btn-icon-top" href="#EcoAcc">Volver</a></li>
+
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+    <div data-role="page" id="EcoAcc4">
+        <div data-role="header">
+            <h1>
+                Agricultura Urbana
+            </h1>
+        </div>
+        <div role="main" class="ui-content">
+            <center>
+                <br />
+                <img src="img/EcoAcc/4explicacion.jpg" />
+                <p>
+                    La producción de alimentos desde cada persona e individuo de la sociedad es el secreto de la subsistencia, la seguridad alimentaria es un tema de mucho cuidado, en el futuro las tierras estarán agotadas por una sobre explotación y la comida será un privilegio de solo muy pocos, entre mas tengas la capacidad de producir tu comida mas cerca estaremos de no presionar a la tierra.
+                    Puedes utilizar el agua lluvia para regar tus plantas y alimentos al mismo tiempo que aportar oxigeno a la atmosferas y a fijar CO2, reduciendo el efecto invernadero y aumentando la resistencia al cambio climático, con tu ayuda lo lograremos!!!
+
+
+                </p> <b></b>
+                <img />
+
+                <div data-role="navbar" style="width:80%">
+                    <ul>
+                        <li><a class="ui-btn ui-alt-icon ui-icon-camera ui-btn-icon-top ui-nodisc-icon" href="#smile4" data-rel="popup" data-position-to="origin">Post FB</a></li>
+                        <li><a class="ui-btn ui-alt-icon ui-icon-edit ui-btn-icon-top ui-nodisc-icon" href="#smile4" data-rel="popup" data-position-to="origin">Tweet</a></li>
+                        <li><a class="ui-btn ui-alt-icon ui-icon-location ui-btn-icon-top ui-nodisc-icon" href="#smile4" data-rel="popup" data-position-to="origin">Ubicación</a></li>
+                    </ul>
+                </div>
+            </center>
+
+
+        </div>
+        <div id="smile4" data-role="popup" style="Background-color:(255,255,255,0.30); border:0px; width:30%; ">
+            <img src="img/smile.png" style="width:100%" />
+        </div>
+
+        <div data-role="footer" data-position="fixed">
+            <div data-role="navbar">
+                <ul>
+                    <li><a class="ui-btn ui-btn-active  ui-alt-icon ui-icon-back ui-btn-icon-top" href="#EcoAcc">Volver</a></li>
+
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+    <div data-role="page" id="EcoAcc5">
+        <div data-role="header">
+            <h1>
+                Plantar un arbol
+            </h1>
+        </div>
+        <div role="main" class="ui-content">
+            <center>
+                <br />
+                <img src="img/EcoAcc/5explicacion.jpg" />
+                <p>
+                    En el futuro un paisaje rural o arbóreo solo será posible verlo en la imaginación, esto no solo provocara la erosión del suelo, la pérdida del recurso hídrico, la contaminación de la atmosfera sino que también el impacto directo de la radiación del sol sobre el planeta.
+                    Al plantar un árbol lograras reducir en gran medida todos estos efectos catastróficos, si lo haces ganaremos mucho tiempo, a sembrar árboles nativos !!!
+
+
+                </p> <b></b>
+                <img />
+
+                <div data-role="navbar" style="width:80%">
+                    <ul>
+                        <li><a class="ui-btn ui-alt-icon ui-icon-camera ui-btn-icon-top ui-nodisc-icon" href="#smile5" data-rel="popup" data-position-to="origin">Post FB</a></li>
+                        <li><a class="ui-btn ui-alt-icon ui-icon-edit ui-btn-icon-top ui-nodisc-icon" href="#smile5" data-rel="popup" data-position-to="origin">Tweet</a></li>
+                        <li><a class="ui-btn ui-alt-icon ui-icon-location ui-btn-icon-top ui-nodisc-icon" href="#smile5" data-rel="popup" data-position-to="origin">Ubicación</a></li>
+                    </ul>
+                </div>
+            </center>
+
+
+        </div>
+        <div id="smile5" data-role="popup" style="Background-color:(255,255,255,0.30); border:0px; width:30%; ">
+            <img src="img/smile.png" style="width:100%" />
+        </div>
+
+        <div data-role="footer" data-position="fixed">
+            <div data-role="navbar">
+                <ul>
+                    <li><a class="ui-btn ui-btn-active  ui-alt-icon ui-icon-back ui-btn-icon-top" href="#EcoAcc">Volver</a></li>
+
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+    <div data-role="page" id="EcoAcc6">
+        <div data-role="header">
+            <h1>
+                Reducir consumo energetico
+            </h1>
+        </div>
+        <div role="main" class="ui-content">
+            <center>
+                <br />
+                <img src="img/EcoAcc/6explicacion.jpg" />
+                <p>
+                    La producción de energía va en aumento debido a que las personas cada vez consumen productos y servicios que exigen energía en los procesos productivos, esta demanda tan fuerte sobre el planeta tiene grandes implicaciones ya sea en la producción de energía eléctrica por medio de hidroeléctricas o plantas de carbón o combustibles fósiles, es importante reducir este tipo de energía y buscar nuevas alternativas de energías renovables como la energía solar o eólica
+
+                </p> <b></b>
+                <img />
+
+                <div data-role="navbar" style="width:80%">
+                    <ul>
+                        <li><a class="ui-btn ui-alt-icon ui-icon-camera ui-btn-icon-top ui-nodisc-icon" href="#smile6" data-rel="popup" data-position-to="origin">Post FB</a></li>
+                        <li><a class="ui-btn ui-alt-icon ui-icon-edit ui-btn-icon-top ui-nodisc-icon" href="#smile6" data-rel="popup" data-position-to="origin">Tweet</a></li>
+                        <li><a class="ui-btn ui-alt-icon ui-icon-location ui-btn-icon-top ui-nodisc-icon" href="#smile6" data-rel="popup" data-position-to="origin">Ubicación</a></li>
+                    </ul>
+                </div>
+            </center>
+
+
+        </div>
+        <div id="smile6" data-role="popup" style="Background-color:(255,255,255,0.30); border:0px; width:30%; ">
+            <img src="img/smile.png" style="width:100%" />
+        </div>
+
+        <div data-role="footer" data-position="fixed">
+            <div data-role="navbar">
+                <ul>
+                    <li><a class="ui-btn ui-btn-active  ui-alt-icon ui-icon-back ui-btn-icon-top" href="#EcoAcc">Volver</a></li>
+
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+    <!--FIN SUBECOACCIONES-->
+
+    <div data-role="page" id="RegET">
+        <div data-role="panel" id="panelRegET" data-theme="b" data-display="reveal">
+            <ul data-role="listview" data-inset="false">
+                <li data-role="list-divider" style="background-color:darkcyan"><H1 style="text-align:center;"> S.E.P.</H1> </li>
+                <li><a class="ui-nodisc-icon ui-btn ui-icon-home ui-btn-icon-left" href="#HOME">Home</a></li>
+                <li><a class="ui-nodisc-icon ui-btn ui-icon-check ui-btn-icon-left" href="#Logros">Logros</a></li>
+                <li data-role="list-divider">Misiones</li>
+                <li><a class="ui-nodisc-icon ui-btn ui-icon-cloud ui-btn-icon-left" href="#ArcAmb">Archivo Ambiental</a></li>
+                <li><a class="ui-nodisc-icon ui-btn ui-icon-bullets ui-btn-icon-left" href="#EcoAcc">Eco Acciones</a></li>
+                <li><a class="ui-nodisc-icon ui-btn ui-icon-navigation ui-btn-icon-left" href="#RegET">Reg. EspacioTemporal</a></li>
+                <li data-role="list-divider">Configuración</li>
+                <li><a class="ui-nodisc-icon ui-btn ui-icon-user ui-btn-icon-left" href="#Profile">Mi Perfil</a></li>
+                <li><a class="ui-nodisc-icon ui-btn ui-icon-info ui-btn-icon-left" href="#About">Acerca De...</a></li>
+            </ul>
+        </div>
+        <div data-role="header" data-theme="b">
+            <a href="#panelRegET" style="height:40%" data-theme="a">
+                <img src="img/Bmenu.png" style="height:100%" />
+            </a>
+            <h1> Registro ET </h1>
+        </div>
+        <div role="main" class="ui-content">
+            <center>
+                <h2>Registro Espacio Temporal</h2>
+                <button>Reconocimiento Territorial</button>
+                <br />
+                <button>Denuncias</button>
+            </center>
+        </div>
+    </div>
+
+    <div data-role="page" id="Profile">
+        <div data-role="panel" id="panelProfile" data-theme="b" data-display="reveal">
+            <ul data-role="listview" data-inset="false">
+                <li data-role="list-divider" style="background-color:darkcyan"><H1 style="text-align:center;"> S.E.P.</H1> </li>
+                <li><a class="ui-nodisc-icon ui-btn ui-icon-home ui-btn-icon-left" href="#HOME">Home</a></li>
+                <li><a class="ui-nodisc-icon ui-btn ui-icon-check ui-btn-icon-left" href="#Logros">Logros</a></li>
+                <li data-role="list-divider">Misiones</li>
+                <li><a class="ui-nodisc-icon ui-btn ui-icon-cloud ui-btn-icon-left" href="#ArcAmb">Archivo Ambiental</a></li>
+                <li><a class="ui-nodisc-icon ui-btn ui-icon-bullets ui-btn-icon-left" href="#EcoAcc">Eco Acciones</a></li>
+                <li><a class="ui-nodisc-icon ui-btn ui-icon-navigation ui-btn-icon-left" href="#RegET">Reg. EspacioTemporal</a></li>
+                <li data-role="list-divider">Configuración</li>
+                <li><a class="ui-nodisc-icon ui-btn ui-icon-user ui-btn-icon-left" href="#Profile">Mi Perfil</a></li>
+                <li><a class="ui-nodisc-icon ui-btn ui-icon-info ui-btn-icon-left" href="#About">Acerca De...</a></li>
+            </ul>
+        </div>
+        <div data-role="header" data-theme="b">
+            <a href="#panelProfile" style="height:40%" data-theme="a">
+                <img src="img/Bmenu.png" style="height:100%" />
+            </a>
+            <h1> Mi Perfil</h1>
+        </div>
+        <div role="main" class="ui-content">
+            <center>
+
+            </center>
+        </div>
+    </div>
+
+    <div data-role="page" id="About">
+        <div data-role="panel" id="panelAbout" data-theme="b" data-display="reveal">
+            <ul data-role="listview" data-inset="false">
+                <li data-icon="alert" data-role="list-divider" style="background-color:darkcyan"><H1 style="text-align:center; font-size:large"> S.E.P.</H1> </li>
+                <li data-icon="home"><a href="#HOME">Home</a></li>
+                <li data-icon="home"><a href="#">Logros</a></li>
+                <li data-icon="alert" data-role="list-divider">Misiones</li>
+                <li data-icon="delete"><a href="#">Archivo Ambiental</a></li>
+                <li data-icon="gear"><a href="#">Reconocimiento T</a></li>
+                <li data-icon="info"><a href="#">Denuncias</a></li>
+                <li data-icon="alert" data-role="list-divider">Configuración</li>
+                <li data-icon="user"><a href="#">Mi Perfil</a></li>
+                <li data-icon="info"><a href="#About">Acerca De...</a></li>
+            </ul>
+        </div>
+        <div data-role="header">
+            <a href="#panelAbout" style="height:40%" data-theme="a">
+                <img src="img/Bmenu.png" style="height:100%" />
+            </a>
+            <h1>Acerca de</h1>
+        </div>
+        <div role="main" class="ui-content">
+            <center>
+                <img src="img/EntropiaID.png" />
+                <h4>Desarrollado por:</h4>
+                <h2 style="color:#00aa00">Entropia I+D</h2>
+                <a class="ui-btn ui-" href="#intro1">Volver a ver el inicio</a>
+            </center>
+        </div>
+    </div>
+
+</body>
+</html>

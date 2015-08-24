@@ -1,0 +1,13 @@
+﻿{
+  "name": "Misión SEP",
+  "description": "Misión: Salvando El Planeta",
+  "launch_path": "/index.html",
+  "icons": {
+    "128": "/img/AppIcon/ico_128.png"
+  },
+  "developer": {
+    "name": "Entropia I+D",
+    "url": "http://www.facebook.com/EntropiaID"
+  },
+  "default_locale": "es"
+}
